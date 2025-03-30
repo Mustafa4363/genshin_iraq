@@ -31,9 +31,56 @@ body {
 }
 
 .content-section {
-    padding: 20px;
+    padding: 0;
     display: none; /* Default is hidden */
-    max-width: 100%; /* Changed from 1200px to 100% to fill screen */
+    max-width: 100%; /* Full width */
+    margin: 0;
+    background: #2c3e50; /* Dark background like in the image */
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.character-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0; /* Remove gap */
+    padding: 0; /* No padding */
+    width: 100%;
+}
+
+/* Style for skill sections like in the image */
+.ability-item {
+    background: #2c3e50; /* Dark background */
+    border-radius: 0;
+    padding: 20px;
+    margin-bottom: 0;
+    border-left: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: white; /* Light text for dark background */
+}
+
+/* Style for constellation items */
+.constellation-item {
+    background: #2c3e50;
+    border-radius: 0;
+    padding: 20px;
+    margin-bottom: 0;
+    border-left: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+}
+    padding: 20px;
     margin: 20px auto;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
