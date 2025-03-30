@@ -360,7 +360,7 @@ body {
     }
     
     .character-card {
-        padding: 15px;
+        padding: 100px;
     }
     
     .level-bar {
@@ -374,7 +374,7 @@ body {
     }
     
     table.character-table {
-        font-size: 12px;
+        font-size: px;
     }
     
     .ability-item p {
