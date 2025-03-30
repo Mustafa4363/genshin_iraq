@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #87CEEB; /* Solid sky blue background */
+    background-color: #87CEEB; /* إعادة لون الخلفية الأصلي */
 }
 
 .top-nav {
-    background-color: #5C8AA8; /* Consistent color with the body */
+    background-color: #5C8AA8;
     padding: 15px;
     text-align: center;
     position: sticky;
@@ -15,7 +15,7 @@ body {
 }
 
 .nav-button {
-    background: #4C7A98; /* Solid color for buttons */
+    background: #4C7A98;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -26,16 +26,16 @@ body {
 }
 
 .nav-button:hover {
-    background: #3B6A88; /* Slightly darker on hover */
+    background: #3B6A88;
     transform: translateY(-2px);
 }
 
 .content-section {
     padding: 0;
     display: none; /* Default is hidden */
-    max-width: 100%; /* Full width */
+    max-width: 100%;
     margin: 0;
-    background: #2c3e50; /* Dark background like in the image */
+    background: rgba(255, 255, 255, 0.9); /* إعادة لون الخلفية الأصلي */
     border-radius: 0;
     box-shadow: none;
 }
@@ -43,64 +43,18 @@ body {
 .character-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0; /* Remove gap */
-    padding: 0; /* No padding */
+    gap: 0;
+    padding: 0;
     width: 100%;
-}
-
-/* Style for skill sections like in the image */
-.ability-item {
-    background: #2c3e50; /* Dark background */
-    border-radius: 0;
-    padding: 20px;
-    margin-bottom: 0;
-    border-left: none;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    box-shadow: none;
-    transition: all 0.3s ease;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    color: white; /* Light text for dark background */
-}
-
-/* Style for constellation items */
-.constellation-item {
-    background: #2c3e50;
-    border-radius: 0;
-    padding: 20px;
-    margin-bottom: 0;
-    border-left: none;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    box-shadow: none;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    color: white;
-}
-    padding: 20px;
-    margin: 20px auto;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.character-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 0; /* Reduced padding to expand content */
-    width: 100%; /* Ensure full width */
 }
 
 .character-card {
-    background: white;
-    border-radius: 10px;
+    background: white; /* إعادة لون الخلفية الأصلي */
+    border-radius: 0;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 100%; /* Ensure full width */
+    box-shadow: none;
+    width: 100%;
+    color: #333; /* إعادة لون النص الأصلي */
 }
 
 .character-image {
@@ -112,16 +66,16 @@ body {
 .character-field {
     margin: 10px 0;
     padding: 10px;
-    background: #f0f8ff;
+    background: #f0f8ff; /* إعادة لون الخلفية الأصلي */
     border-radius: 5px;
+    color: #333; /* إعادة لون النص الأصلي */
 }
 
 .character-field h3 {
     margin: 0 0 10px 0;
-    color: #2F4F4F;
+    color: #2F4F4F; /* إعادة لون النص الأصلي */
 }
 
-/* Add this new class for RTL text with bullets */
 .rtl-text {
     direction: rtl;
     text-align: right;
@@ -129,10 +83,9 @@ body {
     padding-right: 1em;
 }
 
-/* Modify existing paragraph style */
 .character-field p {
     margin: 0;
-    color: #696969;
+    color: #696969; /* إعادة لون النص الأصلي */
     text-align: right;
     direction: rtl;
     unicode-bidi: plaintext;
@@ -145,7 +98,6 @@ body {
     position: absolute;
     right: 0;
 }
-
 
 .resources-section {
     margin-top: 20px;
@@ -166,13 +118,13 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #87CEEB;
+    background-color: #3498db;
     display: inline-block;
 }
 
 .resource-description {
     font-size: 10px;
-    color: #696969;
+    color: #bdc3c7;
     margin-top: 5px;
 }
 
@@ -192,81 +144,61 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #87CEEB;
+    background-color: #3498db;
     margin-bottom: 5px;
 }
-
 
 .character-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* إعادة الظل الأصلي */
 }
 
 .character-table td {
-    border-bottom: 1px solid cyan; /* Fixed dividing line */
+    border-bottom: 1px solid cyan; /* إعادة لون الحدود الأصلي */
     padding: 12px;
     text-align: left;
-    background-color: #f0f8ff;
+    background-color: #f0f8ff; /* إعادة لون الخلفية الأصلي */
     transition: background-color 0.3s;
+    color: #333; /* إعادة لون النص الأصلي */
 }
 
 .character-table tr:hover td {
-    background-color: #e0f7fa; /* Highlight on hover */
+    background-color: #e0f7fa; /* إعادة لون التأثير الأصلي */
 }
 
 .character-table tr:nth-child(even) td {
-    background-color: white;
-}
-
-.character-table tr:last-child td {
-    border-bottom: none; /* Remove border from last row */
-}
-
-.level-bar {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.level-slider {
-    width: 80%;
-    margin-bottom: 10px;
-    background-color: cyan;
-    appearance: none;
-    height: 8px;
-    border-radius: 5px;
-    outline: none;
-    opacity: 0.7;
-    transition: opacity 0.2s;
-}
-
-.level-slider:hover {
-    opacity: 1;
-}
-
-
-/* Constellation List Styles */
-/* Constellation Styles - Enhanced Version */
-.constellation-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
+    background-color: white; /* إعادة لون الصفوف الزوجية الأصلي */
 }
 
 .constellation-item {
     background: linear-gradient(to right, #f0f8ff, #e0f0fa);
-    border-radius: 10px;
+    border-radius: 10px; /* إعادة الحدود المستديرة */
     padding: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* إعادة الهامش السفلي */
     border-left: 5px solid #5C8AA8;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* إعادة الظل الأصلي */
     position: relative;
     overflow: hidden;
-    width: 100%; /* Make the element take full width */
-    margin-left: 0; /* Remove left margin */
-    margin-right: 0; /* Remove right margin */
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: #333;
+}
+
+.ability-item {
+    background: linear-gradient(to right, #f0f8ff, #e0f0fa);
+    border-radius: 10px; /* إعادة الحدود المستديرة */
+    padding: 18px;
+    margin-bottom: 20px; /* إعادة الهامش السفلي */
+    border-left: 5px solid #5C8AA8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* إعادة الظل الأصلي */
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: #333;
 }
 
 .constellation-header {
@@ -276,7 +208,8 @@ body {
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px dashed #5C8AA8;
-    width: 100%; /* Ensure full width */
+    width: 100%; /* تأكيد على العرض الكامل */
+    box-sizing: border-box; /* لضمان احتساب الحشو والحدود ضمن العرض */
 }
 
 .constellation-title {
@@ -284,13 +217,14 @@ body {
     color: #2F4F4F;
     direction: rtl;
     text-align: right;
-    flex: 1;
+    flex: 1; /* يأخذ المساحة المتاحة */
     font-size: 1.1em;
     text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    padding-right: 10px; /* إضافة مساحة على اليمين */
 }
 
 .constellation-level {
-    background: #5C8AA8;
+    background: #5C8AA8; /* تغيير لون الخلفية */
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
@@ -312,42 +246,55 @@ body {
     margin-top: 10px;
 }
 
+/* تنسيق عناوين المهارات */
+.ability-title {
+    font-weight: bold;
+    color: #2F4F4F;
+    direction: rtl;
+    text-align: right;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
 .ability-item {
-    background: linear-gradient(to right, #f0f8ff, #e0f0fa);
-    border-radius: 10px;
-    padding: 18px;
-    margin-bottom: 20px;
-    border-left: 5px solid #5C8AA8;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: linear-gradient(to right, #f0f8ff, #e0f0fa); /* إعادة لون الخلفية الأصلي */
+    border-radius: 0;
+    padding: 20px;
+    margin-bottom: 0;
+    border-left: 5px solid #5C8AA8; /* إعادة اللون الأصلي */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: none;
     transition: all 0.3s ease;
-    width: 100%; /* Added to ensure full width */
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
+    color: #333; /* إعادة لون النص الأصلي */
 }
 
 .ability-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    background: #e0f7fa; /* إعادة لون التأثير الأصلي */
 }
 
+.ability-item p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #696969; /* إعادة لون النص الأصلي */
+}
 
-/* Mobile responsiveness - Enhanced */
-/* Mobile responsiveness - Wider layout */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
     }
     
     .content-section {
-        padding: 15px;
-        margin: 10px auto;
-        max-width: 100%; /* Changed from 95% to 100% */
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
     }
     
     .character-container {
         grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 15px;
+        gap: 0;
+        padding: 0;
     }
     
     .character-card {
@@ -383,15 +330,15 @@ body {
     }
     
     .level-slider {
-        width: 90%;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .content-section {
-        max-width: 100%; /* Changed from 98% to 100% */
-        padding: 10px;
-        margin: 5px auto;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
     }
     
     .resources-grid {
@@ -402,20 +349,10 @@ body {
     .character-table td {
         padding: 8px 10px;
     }
-}
-    
-    .character-table {
-        flex-direction: column;
-        align-items: center;
-    }
     
     .character-option {
         width: 90%;
         margin-bottom: 10px;
-    }
-    
-    .character-card {
-        padding: 100px;
     }
     
     .level-bar {
@@ -428,15 +365,7 @@ body {
         margin-bottom: 5px;
     }
     
-    table.character-table {
-        font-size: px;
-    }
-    
-    .ability-item p {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    
     .resources-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
