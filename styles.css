@@ -292,71 +292,57 @@ body {
 
 /* Mobile responsiveness - Enhanced */
 /* Mobile responsiveness - Wider layout */
+/* Wider character section only */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px; /* زيادة حجم الخط */
+    #characters.content-section {
+        max-width: 98%;
+        padding: 20px;
+        margin: 20px auto;
     }
     
-    .content-section {
-        padding: 15px;
-        margin: 15px auto;
-        max-width: 95%; /* توسيع عرض المحتوى */
-    }
-    
-    .character-container {
+    #characters .character-container {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    #characters .character-card {
+        padding: 20px;
+    }
+    
+    #characters .character-field {
         padding: 15px;
     }
     
-    .character-card {
-        padding: 15px;
-    }
-    
-    .character-field {
+    #characters .character-table td {
         padding: 12px;
+        font-size: 15px;
     }
     
-    .character-table td {
-        padding: 10px;
-        font-size: 14px; /* زيادة حجم خط الجدول */
+    #characters .resources-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
     }
     
-    .resources-grid {
-        grid-template-columns: repeat(4, 1fr); /* زيادة عدد الأعمدة */
-        gap: 12px;
+    #characters .resource-image {
+        width: 50px;
+        height: 50px;
     }
     
-    .resource-image {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .resource-description {
-        font-size: 12px;
-    }
-    
-    .character-select-image {
-        width: 90px;
-        height: 90px;
-    }
-    
-    .level-slider {
-        width: 90%; /* توسيع شريط التمرير */
+    #characters .character-select-image {
+        width: 100px;
+        height: 100px;
     }
 }
 
 @media (max-width: 480px) {
-    .content-section {
-        max-width: 98%; /* توسيع أكثر للشاشات الصغيرة */
+    #characters.content-section {
+        max-width: 100%;
+        padding: 15px;
     }
     
-    .resources-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة بدلاً من 2 */
-    }
-    
-    .character-table td {
-        padding: 8px 10px;
+    #characters .resources-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
     
