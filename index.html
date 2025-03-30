@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .top-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #5C8AA8;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out;
+        }
+        .top-nav.hide {
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <button class="nav-button" onclick="showContent('characters')">الشخصيات</button>
+        <button class="nav-button" onclick="showContent('weapons')">الاسلحة</button>
+        <button class="nav-button" onclick="showContent('missions')">المهام</button>
+        <button class="nav-button" onclick="showContent('enemies')">الأعداء</button>
+        <button class="nav-button" onclick="showContent('events')">الاحداث</button>
+    </nav>
+
+    <div id="content-area">
+        <div id="characters" class="content-section">
+            <!-- Character Selection -->
+            <div class="character-selection">
+                <div class="character-option" onclick="selectCharacter('character1')">
+                    <img src="pu/UI_AvatarIcon_Escoffier.png" alt="Character 1" class="character-select-image">
+                    <p>إسكوفييه</p>
+                </div>
+                <div class="character-option" onclick="selectCharacter('character2')">
+                    <img src="pu/UI_AvatarIcon_Ifa.png" alt="Character 2" class="character-select-image">
+                    <p>ايفا</p>
+                </div>
+            </div>
+
+            <div class="character-container">
+                <!-- Character 1 -->
+                <div id="character1" class="character-card">
+                    <img src="pu/UI_Gacha_AvatarImg_Escoffier.jpg" alt="Character 1" class="character-image">
+                    
+                    <!-- Level Bar -->
+                    <div class="level-bar">
+                        <input type="range" min="1" max="8" value="1" class="level-slider" id="level-slider-character1" onchange="updateTable('character1')">
+                        <span id="level-display-character1">المستوى: 1</span>
+                    </div>
+                    
+                    <!-- Character Attributes Table -->
+                    <table class="character-table" id="table-character1">
+                        <tbody>
+                            <!-- Existing table rows -->
+                        </tbody>
+                    </table>
+                    
+                    <!-- Normal Attack Section -->
+                    <!-- قسم النورمال اتاك -->
+                    <div class="character-field">
+                        <h3>نورمال اتاك</h3>
+                        <div class="level-bar">
+                            <input type="range" min="1" max="15" value="1" class="level-slider" id="normal-attack-slider-character1" onchange="updateNormalAttackTable('character1')">
+                            <span id="normal-attack-level-display-character1">المستوى: 1</span>
+                        </div>
+                        
+                        <div class="ability-item">
+                                <p class="ability-description">
+                                 <br>النورمال تنفذ 3 ضربات رمح متتالية.
+                                <br> التشارج اتاك تستهلك قدرًا معينًا من الستامينا لأداء ضربة تصاعدية
+                                <br>البلانج اتاك تنطلق من منتصف الهواء لتصطدم بالأرض مما تلحق ضرر بالاعداء على طول الطريق ويسبب ضررًا بالمنطقة عند الاصطدام.
+                                 </p>
+                        </div>
+                        
+                        <table class="character-table" id="normal-attack-table-character1">
+                            <tbody>
+                                <!-- Normal attack data will be dynamically updated -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- قسم السكيل -->
+                    <div class="character-field">
+                        <h3>السكيل</h3>
+                        <div class="level-bar">
+                            <input type="range" min="1" max="15" value="1" class="level-slider" id="skill-slider-character1" onchange="updateSkillTable('character1')">
+                            <span id="skill-level-display-character1">المستوى: 1</span>
+                        </div>
+                        
+                        <div class="ability-item">
+                            <p class="ability-description">
+                                وصف السكيل
+                            <br>شاهدوا المعنى الحقيقي لـ الطهي! ستقوم إسكوفييه بعرض تقنيات طهي مختلفة عند النقر أو الضغط المطوّل على هذه المهارة ولكن اطمئنوا فجميعها تمثل فخر فونتين وسعادتها.
+                            <br>
+                            <br>ضغطة واحدة على السكيل
+                            <br>تقوم بتفعيل آليتها متعددة الاستخدامات للطهي في وضع التخزين البارد مما يلحق ضرر كرايو واسع النطاق AOE بالأعداء القريبين.
+                            <br>
+                            <br>توضيح لآلية الطهي في وضع التخزين البارد: 
+                            <br>تكون على شكل طبق يطفو قرب الشخصية وتتبع الشخصية النشطة حاليًا وتطلق حلويات مثلجة على الأعداء القريبين بشكل دوري مما يلحق ضرر كرايو.
+                            <br>
+                            <br>تأثير اوسيا
+                            <br>عند تفعيل آلية الطهي في وضع التخزين البارد ستقوم إسكوفييه باستدعاء نصل متدفق بشكل دوري محدثة ضرر كرايو واسع النطاق AOE يتوافق مع أوسيا
+                            <br>
+                            <br>ضغطة مطولة على السكيل
+                            <br>تقوم بتفعيل وضع الطهي العفوي لآلية الطهي الخاصة بها.
+                            سيكون قدرة انتاجية تنتج 3 أكلات [تجدون الأكلات نهاية الصفحة]
+                            </p>
+                        </div>
+                        
+                        <table class="character-table" id="skill-table-character1">
+                            <tbody>
+                                <!-- Skill data will be dynamically updated -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- قسم الالت -->
+                    <div class="character-field">
+                        <h3>الالت</h3>
+                        <div class="level-bar">
+                            <input type="range" min="1" max="15" value="1" class="level-slider" id="tool-slider-character1" onchange="updateToolTable('character1')">
+                            <span id="tool-level-display-character1">المستوى: 1</span>
+                        </div>
+                        
+                        <div class="ability-item">
+                            <p class="ability-description">
+                                بإظهار مهاراتها الاستثنائية في استخدام السكاكين، تقوم إسكوفييه بإلحاق ضرر كرايو واسع النطاق AOE كما تستعيد HP لجميع أعضاء الفريق القريبين بناءً على الاتاك (ATK) الخاص بها.
+                                <br>وصف الالت:
+                                <br>التقطيع يشبه عزف لحن متحرك، أما الطبق النهائي، المليء بالنكهات والعطور، فهو معزوفتك المكتملة.
+                            </p>
+                        </div>
+                        
+                        <table class="character-table" id="tool-table-character1">
+                            <tbody>
+                                <!-- Tool data will be dynamically updated -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- قسم التالنت -->
+                    <div class="character-field">
+                        <h3>التالنت</h3>
+                        <ul class="constellation-list">
+                            <li class="constellation-item">
+                                <div class="constellation-header">
+                                    <span class="constellation-title">من الأفضل أن يسيل لعابك بدلاً من تناول الدواء</span>
+                                </div>
+                                <p class="constellation-description">
+                                    بعد استخدام الالت تحصل إسكوفييه على تأثير "حمية التعافي" لمدة 9 ثوانٍ مما يستعيد HP للشخصيات النشطة القريبة (الشخصية الي محول عليها) بشكل دوري بناءً على 138.24% من الاتاك (ATK) الخاص بها.
+                                </p>
+                            </li>
+                            
+                            <li class="constellation-item">
+                                <div class="constellation-header">
+                                    <span class="constellation-title">توابل مغمورة بالإلهام</span>
+                                </div>
+                                <p class="constellation-description">
+                                    عند وجود 1/2/3/4 من شخصيات هايدرو أو كرايو في الفريق، ستقوم إسكوفييه بخفض مقاومة الهايدرو و الكرايو للأعداء الذين يتعرضون للسكيل أو الالت بنسبة 5%/10%/15%/55% لمدة 12 ثانية.
+                                </p>
+                            </li>
+                            
+                            <li class="constellation-item">
+                                <div class="constellation-header">
+                                    <span class="constellation-title">الطهي العفوي مستمر</span>
+                                </div>
+                                <p class="constellation-description">
+                                    عند استخدام الضغطة المطولة للسكيل ستقوم إسكوفييه بتفعيل آليتها متعددة الاستخدامات للطهي في وضع "الطهي العفوي".
+                                    <br>آلية الطهي: وضع الطهي العفوي
+                                    <br>تضع آلية الطهي على أرض المعركة حيث يمكنها امتصاص الهجمات العنصرية.
+                                    <br>عند امتصاص كمية معينة من الهجمات العنصرية يمكن لإسكوفييه تحويل المكونات المخزنة داخلها إلى أطباق لذيذة.
+                                    <br>تحتاج إسكوفييه إلى وقت لشراء مكونات جديدة وبعد تحضير عدد معين من الأطباق يجب الانتظار 7 أيام قبل صنع المزيد.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Constellation Section -->
+                    <div class="character-field">
+                        <h3>الكونستليشن</h3>
+                        <li class="constellation-item">
+                            <div class="constellation-header">
+                                <span class="constellation-title">[رقصة ما قبل العشاء لتهيئة براعم التذوق]</span>
+                                <span class="constellation-level">C1</span>
+                            </div>
+                            <p class="constellation-description">
+                                عند يكوّن الفريق بالكامل من شخصيات هايدرو أو كرايو ستحصل جميع الشخصيات القريبة على زيادة 60% في معدل دمج كرايو (كريت دمج ضربات الكرايو) لمدة 15 ثانية بعد أن تستخدم إسكوفييه السكيل او الالت
+                            <br>ملاحظة: يجب فتح التالنت "من الأفضل أن يسيل لعابك بدلا من تناول الدواء" أولاً
+                            </p>
+                        </li>
+                        <li class="constellation-item">
+                            <div class="constellation-header">
+                                <span class="constellation-title">[الحساء الطازج والمعطر هو فن]</span>
+                                <span class="constellation-level">C2</span>
+                            </div>
+                            <p class="constellation-description">
+                                عندما تفعل إسكوفييه وضع التخزين البارد في آلية الطهي (المقصود لمن تفعل السكيل) الخاصة بها ستحصل على تأثير "وجبة طازجة التحضير" لمدة 15 ثانية. خلال هذه الفترة تكتسب 5 مكدسات من "الطبق البارد".
+                                <br>عندما تتسبب الشخصيات النشطة القريبة (باستثناء إسكوفييه) في ضرر كرايو يتم استهلاك 1 مكدس من "الطبق البارد" لزيادة الضرر بنسبة 240% من اتاك (ATK) إسكوفييه.
+                                <br>إذا تم ضرب عدة أعداء بنفس الهجوم سيتم استهلاك المكدسات بناءً على عدد الأعداء المصابين.
+                            </p>
+                        </li>
+                        <li class="constellation-item">
+                            <div class="constellation-header">
+                                <span class="constellation-title">[سحر المخبوزات بتقنية الكراميل]</span>
+                                <span class="constellation-level">C3</span>
+                            </div>
+                            <p class="constellation-description">
+                                زيادة مستوى السكيل بمقدار 3 مستويات
+                            </p>
+                        </li>
+                        <li class="constellation-item">
+                            <div class="constellation-header">
+                                <span class="constellation-title">[وصفة الروزماري السرية]</span>
+                                <span class="constellation-level">C4</span>
+                            </div>
+                                <p class="constellation-description">
+                                تمديد مدة تأثير "حمية التعافي" بمقدار 6 ثوانٍ إضافية
+                                <br>(ملاحظة التأثير في التالنت الاول الخاص بالهيل)
+                                <br>
+                                <br>أثناء تفعيل التأثير هناك فرصة لاستعادة 100% إضافية من HP وإعادة 2 انيرجي إلى إسكوفييه عند الهيل عبر "حمية التعافي".
+                                <br>تعتمد نسبة نجاح هذا التأثير على معدل الكريت ريت لإسكوفييه.
+                                <br>يمكن تفعيل هذا التأثير 7 مرات كحد أقصى خلال مدة تفعيل "حمية التعافي".
+                                <br>ملاحظة  يجب فتح الموهبة السلبية "من الأفضل أن تسيل لعابك على أن تتناول الدواء" أولاً
+                          </p>
+                        </li>
+                        <li class="constellation-item">
+                            <div class="constellation-header">
+                                <span class="constellation-title">[سيمفونية الألف صلصة]</span>
+                                <span class="constellation-level">C5</span>
+                            </div>
+                            <p class="constellation-description">
+                                زيادة مستوى الالت بمقدار 3 مستويات
+                            </p>
+                        </li>
+                        <li class="constellation-item">
+                            <div class="constellation-header">
+                                <span class="constellation-title">[حفلات شاي مليئة بالألوان]</span>
+                                <span class="constellation-level">C6</span>
+                            </div>
+                            <p class="constellation-description">
+                                يتم تعزيز "آلية الطهي: وضع التخزين البارد" كالتالي:
+                                <br>عند إصابة الأعداء بهجمات نورمال اتاك او تشارج اتاك أو بلانج اتاك من الشخصيات النشطة في الفريق ستطلق آلية الطهي: وضع التخزين البارد "بارفيه مجمد من الدرجة الخاصة" إضافي، مما يلحق 350% من اتاك (ATK) إسكوفييه كضرر كرايو واسع النطاق AOE.
+                                <br>ويتم تصنيف هذا الضرر على أنه ضرر سكيل .
+                            </p>
+                        </li>
+                    </div>
+                </div>
+                
+                <!-- Character 2 -->
+                <div id="character2" class="character-card">
+                    <img src="pu/UI_Gacha_AvatarImg_Ifa.webp" alt="ايفا" class="character-image">
+                    
+                    <!-- Level Bar -->
+                    <div class="level-bar">
+                        <input type="range" min="1" max="8" value="1" class="level-slider" id="level-slider-character2" onchange="updateTable('character2')">
+                        <span id="level-display-character2">المستوى: 1</span>
+                    </div>
+                    
+                    <!-- Character Attributes Table -->
+                    <table class="character-table" id="table-character2">
+                        <tbody>
+                            <!-- Similar structure for Character 2 -->
+                        </tbody>
+                    </table>
+                    
+                    <!-- For Character 2's Normal Attack section -->
+                    <div class="character-field">
+                        <h3>نورمال اتاك</h3>
+                        <div class="level-bar">
+                            <input type="range" min="1" max="15" value="1" class="level-slider" id="normal-attack-slider-character2" onchange="updateNormalAttackTable('character2')">
+                            <span id="normal-attack-level-display-character2">المستوى: 1</span>
+                        </div>
+                        <table class="character-table" id="normal-attack-table-character2">
+                            <tbody>
+                                <!-- Normal attack data will be dynamically updated -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- For Character 2's Skill section -->
+                    <div class="character-field">
+                        <h3>السكيل</h3>
+                        <div class="level-bar">
+                            <input type="range" min="1" max="15" value="1" class="level-slider" id="skill-slider-character2" onchange="updateSkillTable('character2')">
+                            <span id="skill-level-display-character2">المستوى: 1</span>
+                        </div>
+                        <table class="character-table" id="skill-table-character2">
+                            <tbody>
+                                <!-- Skill data will be dynamically updated -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- For Character 2's Tool section -->
+                    <div class="character-field">
+                        <h3>الالت</h3>
+                        <div class="level-bar">
+                            <input type="range" min="1" max="15" value="1" class="level-slider" id="tool-slider-character2" onchange="updateToolTable('character2')">
+                            <span id="tool-level-display-character2">المستوى: 1</span>
+                        </div>
+                        <table class="character-table" id="tool-table-character2">
+                            <tbody>
+                                <!-- Tool data will be dynamically updated -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="character-field">
+                        <h3>التالنت</h3>
+                        <!-- Existing content -->
+                    </div>
+                    <div class="character-field">
+                        <h3>الكونستليشن</h3>
+                        <ul class="constellation-list">
+                            <li class="constellation-item">
+                                <div class="constellation-header">
+                                    <span class="constellation-title">[رقصة ما قبل العشاء لتهيئة براعم التذوق]</span>
+                                    <span class="constellation-level">C1</span>
+                                </div>
+                                <p class="constellation-description">
+                                    عند يكوّن الفريق بالكامل من شخصيات هايدرو أو كرايو ستحصل جميع الشخصيات القريبة على زيادة 60% في معدل دمج كرايو (كريت دمج ضربات الكرايو) لمدة 15 ثانية بعد أن تستخدم إسكوفييه السكيل او الالت.
+                                    <br>ملاحظة: يجب فتح التالنت "من الأفضل أن يسيل لعابك بدلا من تناول الدواء" أولاً.
+                                </p>
+                            </li>
+                            
+                            <li class="constellation-item">
+                                <div class="constellation-header">
+                                    <span class="constellation-title">[الحساء الطازج والمعطر هو فن]</span>
+                                    <span class="constellation-level">C2</span>
+                                </div>
+                                <p class="constellation-description">
+                                    عندما تفعل إسكوفييه وضع التخزين البارد في آلية الطهي (المقصود لمن تفعل السكيل) الخاصة بها ستحصل على تأثير "وجبة طازجة التحضير" لمدة 15 ثانية. خلال هذه الفترة تكتسب 5 مكدسات من "الطبق البارد".
+                                    <br>عندما تتسبب الشخصيات النشطة القريبة (باستثناء إسكوفييه) في ضرر كرايو يتم استهلاك 1 مكدس من "الطبق البارد" لزيادة الضرر بنسبة 240% من اتاك (ATK) إسكوفييه.
+                                    <br>إذا تم ضرب عدة أعداء بنفس الهجوم سيتم استهلاك المكدسات بناءً على عدد الأعداء المصابين.
+                                </p>
+                            </li>
+                            
+                            <!-- باقي عناصر الكونستليشن بنفس النمط -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="weapons" class="content-section">
+            <h2>الاسلحة</h2>
+            <p>This is the weapons section.</p>
+        </div>
+        <div id="missions" class="content-section">
+            <h2>المهام</h2>
+            <p>This is the missions section.</p>
+        </div>
+        <div id="enemies" class="content-section">
+            <h2>الأعداء</h2>
+            <p>This is the enemies section.</p>
+        </div>
+        <div id="events" class="content-section">
+            <h2>الاحداث</h2>
+            <p>This is the events section.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

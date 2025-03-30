@@ -1,0 +1,165 @@
+Lv1
+Skill DMG
+592.8%
+Healing
+172.032% ATK+1078.52551
+CD
+15s
+Energy Cost
+60
+
+
+Lv2
+Skill DMG
+637.26%
+Healing
+184.9344% ATK+1186.39307
+CD
+15s
+Energy Cost
+60
+
+
+Lv3
+Skill DMG
+681.72002%
+Healing
+197.8368% ATK+1303.24951
+CD
+15s
+Energy Cost
+60
+
+
+Lv4
+Skill DMG
+741.0%
+Healing
+215.04% ATK+1429.09497
+CD
+15s
+Energy Cost
+60
+
+
+Lv5
+Skill DMG
+785.46%
+Healing
+227.9424% ATK+1563.92944
+CD
+15s
+Energy Cost
+60
+
+
+Lv6
+Skill DMG
+829.92%
+Healing
+240.8448% ATK+1707.75281
+CD
+15s
+Energy Cost
+60
+
+
+Lv7
+Skill DMG
+889.2%
+Healing
+258.04801% ATK+1860.56519
+CD
+15s
+Energy Cost
+60
+
+
+Lv8
+Skill DMG
+948.48003%
+Healing
+275.2512% ATK+2022.36646
+CD
+15s
+Energy Cost
+60
+
+
+Lv9
+Skill DMG
+1007.75995%
+Healing
+292.45441% ATK+2193.15674
+CD
+15s
+Energy Cost
+60
+
+
+Lv10
+Skill DMG
+1067.03997%
+Healing
+309.6576% ATK+2372.93604
+CD
+15s
+Energy Cost
+60
+
+
+Lv11
+Skill DMG
+1126.31998%
+Healing
+326.86081% ATK+2561.7041
+CD
+15s
+Energy Cost
+60
+
+
+Lv12
+Skill DMG
+1185.6%
+Healing
+344.064% ATK+2759.46143
+CD
+15s
+Energy Cost
+60
+
+
+Lv13
+Skill DMG
+1259.7%
+Healing
+365.56799% ATK+2966.20752
+CD
+15s
+Energy Cost
+60
+
+
+Lv14
+Skill DMG
+1333.8%
+Healing
+387.07199% ATK+3181.94263
+CD
+15s
+Energy Cost
+60
+
+
+Lv15
+Skill DMG
+1407.9%
+Healing
+408.57601% ATK+3406.6665
+CD
+15s
+Energy Cost
+60
+
+

@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB; /* Solid sky blue background */
+}
+
+.top-nav {
+    background-color: #5C8AA8; /* Consistent color with the body */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-button {
+    background: #4C7A98; /* Solid color for buttons */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.nav-button:hover {
+    background: #3B6A88; /* Slightly darker on hover */
+    transform: translateY(-2px);
+}
+
+.content-section {
+    padding: 20px;
+    display: none; /* Default is hidden */
+    max-width: 1200px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.character-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.character-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.character-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.character-field {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f0f8ff;
+    border-radius: 5px;
+}
+
+.character-field h3 {
+    margin: 0 0 10px 0;
+    color: #2F4F4F;
+}
+
+/* Add this new class for RTL text with bullets */
+.rtl-text {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: plaintext;
+    padding-right: 1em;
+}
+
+/* Modify existing paragraph style */
+.character-field p {
+    margin: 0;
+    color: #696969;
+    text-align: right;
+    direction: rtl;
+    unicode-bidi: plaintext;
+    padding-right: 1.5em;
+    text-indent: -1.5em;
+}
+
+.character-field p::before {
+    content: "•";
+    position: absolute;
+    right: 0;
+}
+
+
+.resources-section {
+    margin-top: 20px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.resource-item {
+    text-align: center;
+}
+
+.resource-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #87CEEB;
+    display: inline-block;
+}
+
+.resource-description {
+    font-size: 10px;
+    color: #696969;
+    margin-top: 5px;
+}
+
+.character-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.character-option {
+    cursor: pointer;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.character-select-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #87CEEB;
+    margin-bottom: 5px;
+}
+
+
+.character-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.character-table td {
+    border-bottom: 1px solid cyan; /* Fixed dividing line */
+    padding: 12px;
+    text-align: left;
+    background-color: #f0f8ff;
+    transition: background-color 0.3s;
+}
+
+.character-table tr:hover td {
+    background-color: #e0f7fa; /* Highlight on hover */
+}
+
+.character-table tr:nth-child(even) td {
+    background-color: white;
+}
+
+.character-table tr:last-child td {
+    border-bottom: none; /* Remove border from last row */
+}
+
+.level-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.level-slider {
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: cyan;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.level-slider:hover {
+    opacity: 1;
+}
+
+
+/* Constellation List Styles */
+/* Constellation Styles - Enhanced Version */
+.constellation-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.constellation-item {
+    background: linear-gradient(to right, #f0f8ff, #e0f0fa);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-left: 5px solid #5C8AA8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.constellation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.constellation-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: #5C8AA8;
+}
+
+.constellation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #5C8AA8;
+}
+
+.constellation-title {
+    font-weight: bold;
+    color: #2F4F4F;
+    direction: rtl;
+    text-align: right;
+    flex: 1;
+    font-size: 1.1em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.constellation-level {
+    background: #5C8AA8;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* تنسيق موحد لجميع أقسام الوصف */
+.ability-description {
+    color: #555;
+    direction: rtl;
+    text-align: right;
+    padding: 10px 15px;
+    line-height: 1.6;
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.ability-item {
+    background: linear-gradient(to right, #f0f8ff, #e0f0fa);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-left: 5px solid #5C8AA8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.ability-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}

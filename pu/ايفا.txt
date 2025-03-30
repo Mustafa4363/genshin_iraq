@@ -1,0 +1,255 @@
+Lv1
+1-Hit DMG
+53.6072%
+2-Hit DMG
+47.4672%
+3-Hit DMG
+74.7584%
+Charged Attack DMG
+147.04%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+56.8288%
+Low/High Plunge DMG
+113.6335%/141.93439%
+
+Lv2
+1-Hit DMG
+57.6277%
+2-Hit DMG
+51.0272%
+3-Hit DMG
+80.3653%
+Charged Attack DMG
+158.068%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+61.4544%
+Low/High Plunge DMG
+122.8828%/153.48721%
+
+Lv3
+1-Hit DMG
+61.6483%
+2-Hit DMG
+54.5873%
+3-Hit DMG
+85.9722%
+Charged Attack DMG
+169.096%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+66.08%
+Low/High Plunge DMG
+132.13201%/165.04%
+
+Lv4
+1-Hit DMG
+67.009%
+2-Hit DMG
+59.334%
+3-Hit DMG
+93.448%
+Charged Attack DMG
+183.8%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+72.688%
+Low/High Plunge DMG
+145.3452%/181.54401%
+
+Lv5
+1-Hit DMG
+71.0295%
+2-Hit DMG
+62.894%
+3-Hit DMG
+99.0549%
+Charged Attack DMG
+194.828%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+77.3136%
+Low/High Plunge DMG
+154.5944%/193.0968%
+
+
+Lv6
+1-Hit DMG
+75.0501%
+2-Hit DMG
+66.4541%
+3-Hit DMG
+104.6618%
+Charged Attack DMG
+205.85599%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+82.6%
+Low/High Plunge DMG
+165.165%/206.3%
+
+
+Lv7
+1-Hit DMG
+80.4108%
+2-Hit DMG
+71.2008%
+3-Hit DMG
+112.1376%
+Charged Attack DMG
+220.56%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+89.8688%
+Low/High Plunge DMG
+179.6995%/224.4544%
+
+
+
+Lv8
+1-Hit DMG
+85.7715%
+2-Hit DMG
+75.9475%
+3-Hit DMG
+119.6134%
+Charged Attack DMG
+235.26399%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+97.1376%
+Low/High Plunge DMG
+194.234%/242.60881%
+
+
+Lv9
+1-Hit DMG
+91.1322%
+2-Hit DMG
+80.6942%
+3-Hit DMG
+127.0893%
+Charged Attack DMG
+249.968%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+104.4064%
+Low/High Plunge DMG
+208.76861%/260.76319%
+
+
+
+Lv10
+1-Hit DMG
+96.493%
+2-Hit DMG
+85.441%
+3-Hit DMG
+134.5651%
+Charged Attack DMG
+264.67199%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+112.336%
+Low/High Plunge DMG
+224.6244%/280.568%
+
+
+
+Lv11
+1-Hit DMG
+101.8537%
+2-Hit DMG
+90.1877%
+3-Hit DMG
+142.041%
+Charged Attack DMG
+279.37601%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+120.2656%
+Low/High Plunge DMG
+240.48021%/300.37279%
+
+
+
+Lv12
+1-Hit DMG
+107.2144%
+2-Hit DMG
+94.9344%
+3-Hit DMG
+149.5168%
+Charged Attack DMG
+294.08%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+128.1952%
+Low/High Plunge DMG
+256.33609%/320.1776%
+
+
+
+Lv13
+1-Hit DMG
+113.9153%
+2-Hit DMG
+100.8678%
+3-Hit DMG
+158.8616%
+Charged Attack DMG
+312.46%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+136.1248%
+Low/High Plunge DMG
+272.19191%/339.98239%
+
+
+
+Lv14
+1-Hit DMG
+120.6162%
+2-Hit DMG
+106.8012%
+3-Hit DMG
+168.20641%
+Charged Attack DMG
+330.84%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+144.0544%
+Low/High Plunge DMG
+288.04779%/359.7872%
+
+
+Lv15
+1-Hit DMG
+127.31709%
+2-Hit DMG
+112.7346%
+3-Hit DMG
+177.5512%
+Charged Attack DMG
+349.21999%
+Charged Attack Stamina Cost
+50
+Plunge DMG
+151.984%
+Low/High Plunge DMG
+303.9036%/379.59199%

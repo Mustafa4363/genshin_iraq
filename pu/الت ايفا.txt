@@ -1,0 +1,166 @@
+Lv1
+Skill DMG
+508.47998%
+Sedation Mark DMG
+108.96%
+CD
+15s
+Energy Cost
+60
+
+
+Lv2
+Skill DMG
+546.61598%
+Sedation Mark DMG
+117.132%
+CD
+15s
+Energy Cost
+60
+
+
+Lv3
+Skill DMG
+584.75199%
+Sedation Mark DMG
+125.304%
+CD
+15s
+Energy Cost
+60
+
+
+Lv4
+Skill DMG
+635.6%
+Sedation Mark DMG
+136.2%
+CD
+15s
+Energy Cost
+60
+
+
+Lv5
+Skill DMG
+673.736%
+Sedation Mark DMG
+144.372%
+CD
+15s
+Energy Cost
+60
+
+
+Lv6
+Skill DMG
+711.87201%
+Sedation Mark DMG
+152.544%
+CD
+15s
+Energy Cost
+60
+
+
+Lv7
+Skill DMG
+762.72001%
+Sedation Mark DMG
+163.44%
+CD
+15s
+Energy Cost
+60
+
+
+Lv8
+Skill DMG
+813.56802%
+Sedation Mark DMG
+174.336%
+CD
+15s
+Energy Cost
+60
+
+
+Lv9
+Skill DMG
+864.41603%
+Sedation Mark DMG
+185.232%
+CD
+15s
+Energy Cost
+60
+
+
+Lv10
+Skill DMG
+915.26403%
+Sedation Mark DMG
+196.128%
+CD
+15s
+Energy Cost
+60
+
+
+Lv11
+Skill DMG
+966.11204%
+Sedation Mark DMG
+207.024%
+CD
+15s
+Energy Cost
+60
+
+
+Lv12
+Skill DMG
+1016.95995%
+Sedation Mark DMG
+217.92%
+CD
+15s
+Energy Cost
+60
+
+
+Lv13
+Skill DMG
+1080.51996%
+Sedation Mark DMG
+231.53999%
+CD
+15s
+Energy Cost
+60
+
+
+Lv14
+Skill DMG
+1144.07997%
+Sedation Mark DMG
+245.16%
+CD
+15s
+Energy Cost
+60
+
+
+Lv15
+Skill DMG
+1207.63998%
+Sedation Mark DMG
+258.78%
+CD
+15s
+Energy Cost
+60
+
+
+

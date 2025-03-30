@@ -1,0 +1,165 @@
+Lv1
+Tonicshot DMG
+133.36%
+Tonicshot Healing On Hit
+20.16% Elemental Mastery+48.14847
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv2
+Tonicshot DMG
+143.362%
+Tonicshot Healing On Hit
+21.672% Elemental Mastery+52.96399
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv3
+Tonicshot DMG
+153.364%
+Tonicshot Healing On Hit
+23.184% Elemental Mastery+58.1808
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv4
+Tonicshot DMG
+166.7%
+Tonicshot Healing On Hit
+25.2% Elemental Mastery+63.7989
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv5
+Tonicshot DMG
+176.702%
+Tonicshot Healing On Hit
+26.712% Elemental Mastery+69.8183
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv6
+Tonicshot DMG
+186.704%
+Tonicshot Healing On Hit
+28.224% Elemental Mastery+76.23898
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv7
+Tonicshot DMG
+200.04%
+Tonicshot Healing On Hit
+30.24% Elemental Mastery+83.06097
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv8
+Tonicshot DMG
+213.376%
+Tonicshot Healing On Hit
+32.256% Elemental Mastery+90.28424
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv9
+Tonicshot DMG
+226.71199%
+Tonicshot Healing On Hit
+34.272% Elemental Mastery+97.90881
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv10
+Tonicshot DMG
+240.048%
+Tonicshot Healing On Hit
+36.288% Elemental Mastery+105.93467
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv11
+Tonicshot DMG
+253.38399%
+Tonicshot Healing On Hit
+38.304% Elemental Mastery+114.36182
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv12
+Tonicshot DMG
+266.72%
+Tonicshot Healing On Hit
+40.32% Elemental Mastery+123.19027
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv13
+Tonicshot DMG
+283.39%
+Tonicshot Healing On Hit
+42.84% Elemental Mastery+132.42001
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv14
+Tonicshot DMG
+300.06%
+Tonicshot Healing On Hit
+45.36% Elemental Mastery+142.05104
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+
+Lv15
+Tonicshot DMG
+316.73%
+Tonicshot Healing On Hit
+47.88% Elemental Mastery+152.08337
+Nightsoul Point Limit
+80
+CD
+7.5s
+
+

@@ -1,0 +1,228 @@
+Lv1
+Skill DMG
+50.4%
+Frozen Parfait Attack DMG
+120.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+33.6%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv2
+Skill DMG
+54.18%
+Frozen Parfait Attack DMG
+129.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+36.12%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv3
+Skill DMG
+57.96%
+Frozen Parfait Attack DMG
+138.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+38.64%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv4
+Skill DMG
+63.0%
+Frozen Parfait Attack DMG
+150.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+42.0%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv5
+Skill DMG
+66.78%
+Frozen Parfait Attack DMG
+159.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+44.52%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv6
+Skill DMG
+70.56%
+Frozen Parfait Attack DMG
+168.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+47.04%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv7
+Skill DMG
+75.6%
+Frozen Parfait Attack DMG
+180.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+50.4%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv8
+Skill DMG
+80.64%
+Frozen Parfait Attack DMG
+192.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+53.76%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv9
+Skill DMG
+85.68%
+Frozen Parfait Attack DMG
+204.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+57.12%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv10
+Skill DMG
+90.72%
+Frozen Parfait Attack DMG
+216.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+60.48%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv11
+Skill DMG
+95.76%
+Frozen Parfait Attack DMG
+228.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+63.84%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv12
+Skill DMG
+100.8%
+Frozen Parfait Attack DMG
+240.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+67.2%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv13
+Skill DMG
+107.1%
+Frozen Parfait Attack DMG
+255.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+71.4%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv14
+Skill DMG
+113.4%
+Frozen Parfait Attack DMG
+270.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+75.6%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+Lv15
+Skill DMG
+119.7%
+Frozen Parfait Attack DMG
+285.0%
+Cooking Mek: Cold Storage Mode Duration
+20s
+Surging Blade DMG
+79.8%
+Surging Blade CD Interval
+10s
+Skill CD
+15s
+
+
+
+
+

@@ -1,0 +1,25 @@
+ <!-- Resources Section -->
+                    <div class="resources-section">
+                        <h3>الموارد</h3>
+                        <div class="resources-grid">
+                            <!-- Repeat this block 16 times -->
+                            <div class="resource-item">
+                                <img src="pu/UI_Gacha_AvatarImg_Ifa.webp" alt="Resource 1" class="resource-image">
+                                <p class="resource-description">Description 1</p>
+                            </div>
+                            <!-- Add more resource items here -->
+                        </div>
+                    </div>
+
+                       <!-- Resources Section -->
+                    <div class="resources-section">
+                        <h3>الموارد</h3>
+                        <div class="resources-grid">
+                            <!-- Repeat this block 16 times -->
+                            <div class="resource-item">
+                                <img src="pu/resource2.jpg" alt="Resource 2" class="resource-image">
+                                <p class="resource-description">Description 2</p>
+                            </div>
+                            <!-- Add more resource items here -->
+                        </div>
+                    </div>
