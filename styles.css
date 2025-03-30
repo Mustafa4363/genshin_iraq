@@ -215,9 +215,9 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    width: calc(100% - 40px); /* Adjust width to account for padding/margin */
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; /* Make the element take full width */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
 }
 
 .constellation-header {
@@ -227,7 +227,7 @@ body {
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px dashed #5C8AA8;
-    width: 100%;
+    width: 100%; /* Ensure full width */
 }
 
 .constellation-title {
