@@ -185,20 +185,36 @@ body {
     margin-left: 0;
     margin-right: 0;
     color: #333;
+    box-sizing: border-box; /* لضمان احتساب الحشو والحدود ضمن العرض */
 }
 
 .ability-item {
     background: linear-gradient(to right, #f0f8ff, #e0f0fa);
-    border-radius: 10px; /* إعادة الحدود المستديرة */
-    padding: 18px;
-    margin-bottom: 20px; /* إعادة الهامش السفلي */
+    border-radius: 10px;
+    padding: 18px 10px 18px 18px; /* تقليل الهامش من اليمين */
+    margin-bottom: 20px;
     border-left: 5px solid #5C8AA8;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* إعادة الظل الأصلي */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     color: #333;
+    box-sizing: border-box; /* لضمان احتساب الحشو والحدود ضمن العرض */
+}
+
+/* تنسيق موحد لجميع أقسام الوصف */
+.ability-description {
+    color: #555;
+    direction: rtl;
+    text-align: right;
+    padding: 10px 5px 10px 15px; /* تقليل الهامش من اليمين */
+    line-height: 1.6;
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .constellation-header {
