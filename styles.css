@@ -33,7 +33,7 @@ body {
 .content-section {
     padding: 20px;
     display: none; /* Default is hidden */
-    max-width: 1200px;
+    max-width: 100%; /* Changed from 1200px to 100% to fill screen */
     margin: 20px auto;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -44,7 +44,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 0; /* Reduced padding to expand content */
+    width: 100%; /* Ensure full width */
 }
 
 .character-card {
@@ -52,6 +53,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%; /* Ensure full width */
 }
 
 .character-image {
@@ -271,6 +273,9 @@ body {
     border-left: 5px solid #5C8AA8;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    width: 100%; /* Added to ensure full width */
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .ability-item:hover {
@@ -283,13 +288,13 @@ body {
 /* Mobile responsiveness - Wider layout */
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* زيادة حجم الخط */
+        font-size: 16px;
     }
     
     .content-section {
         padding: 15px;
-        margin: 15px auto;
-        max-width: 95%; /* توسيع عرض المحتوى */
+        margin: 10px auto;
+        max-width: 100%; /* Changed from 95% to 100% */
     }
     
     .character-container {
@@ -308,11 +313,11 @@ body {
     
     .character-table td {
         padding: 10px;
-        font-size: 14px; /* زيادة حجم خط الجدول */
+        font-size: 14px;
     }
     
     .resources-grid {
-        grid-template-columns: repeat(4, 1fr); /* زيادة عدد الأعمدة */
+        grid-template-columns: repeat(4, 1fr);
         gap: 12px;
     }
     
@@ -331,17 +336,20 @@ body {
     }
     
     .level-slider {
-        width: 90%; /* توسيع شريط التمرير */
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .content-section {
-        max-width: 98%; /* توسيع أكثر للشاشات الصغيرة */
+        max-width: 100%; /* Changed from 98% to 100% */
+        padding: 10px;
+        margin: 5px auto;
     }
     
     .resources-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة بدلاً من 2 */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
     
     .character-table td {
