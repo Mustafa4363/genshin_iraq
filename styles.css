@@ -215,21 +215,9 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-}
-
-.constellation-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.constellation-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5px;
-    height: 100%;
-    background: #5C8AA8;
+    width: calc(100% - 40px); /* Adjust width to account for padding/margin */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .constellation-header {
@@ -239,6 +227,7 @@ body {
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px dashed #5C8AA8;
+    width: 100%;
 }
 
 .constellation-title {
@@ -292,57 +281,71 @@ body {
 
 /* Mobile responsiveness - Enhanced */
 /* Mobile responsiveness - Wider layout */
-/* Wider character section only */
 @media (max-width: 768px) {
-    #characters.content-section {
-        max-width: 98%;
-        padding: 20px;
-        margin: 20px auto;
+    body {
+        font-size: 16px; /* زيادة حجم الخط */
     }
     
-    #characters .character-container {
+    .content-section {
+        padding: 15px;
+        margin: 15px auto;
+        max-width: 95%; /* توسيع عرض المحتوى */
+    }
+    
+    .character-container {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
-    }
-    
-    #characters .character-card {
-        padding: 20px;
-    }
-    
-    #characters .character-field {
+        gap: 15px;
         padding: 15px;
     }
     
-    #characters .character-table td {
+    .character-card {
+        padding: 15px;
+    }
+    
+    .character-field {
         padding: 12px;
-        font-size: 15px;
     }
     
-    #characters .resources-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
+    .character-table td {
+        padding: 10px;
+        font-size: 14px; /* زيادة حجم خط الجدول */
     }
     
-    #characters .resource-image {
-        width: 50px;
-        height: 50px;
+    .resources-grid {
+        grid-template-columns: repeat(4, 1fr); /* زيادة عدد الأعمدة */
+        gap: 12px;
     }
     
-    #characters .character-select-image {
-        width: 100px;
-        height: 100px;
+    .resource-image {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .resource-description {
+        font-size: 12px;
+    }
+    
+    .character-select-image {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .level-slider {
+        width: 90%; /* توسيع شريط التمرير */
     }
 }
 
 @media (max-width: 480px) {
-    #characters.content-section {
-        max-width: 100%;
-        padding: 15px;
+    .content-section {
+        max-width: 98%; /* توسيع أكثر للشاشات الصغيرة */
     }
     
-    #characters .resources-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .resources-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة بدلاً من 2 */
+    }
+    
+    .character-table td {
+        padding: 8px 10px;
     }
 }
     
