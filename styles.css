@@ -12,6 +12,7 @@ body {
     position: sticky;
     top: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100; /* إضافة مستوى z أعلى للتأكد من ظهورها فوق العناصر الأخرى */
 }
 
 .nav-button {
@@ -69,6 +70,8 @@ body {
     background: #f0f8ff; /* إعادة لون الخلفية الأصلي */
     border-radius: 5px;
     color: #333; /* إعادة لون النص الأصلي */
+    border-left: 5px solid #5C8AA8; /* إضافة حدود على اليسار مثل التالنت */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* إضافة ظل خفيف */
 }
 
 .character-field h3 {
@@ -131,13 +134,24 @@ body {
 .character-selection {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0; /* تعديل الهوامش */
+    background: linear-gradient(to right, #f0f8ff, #e0f0fa);
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 5px solid #5C8AA8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-wrap: wrap; /* السماح بالتفاف العناصر عند تصغير الشاشة */
+    width: 100%; /* تأكيد على العرض الكامل */
+    box-sizing: border-box;
+    position: relative; /* إضافة موضع نسبي */
+    top: 0; /* بدء من أعلى المحتوى */
 }
 
 .character-option {
     cursor: pointer;
     margin: 0 10px;
     text-align: center;
+    color: #333;
 }
 
 .character-select-image {
@@ -260,6 +274,7 @@ body {
     background: rgba(255,255,255,0.7);
     border-radius: 5px;
     margin-top: 10px;
+    border-left: 5px solid #5C8AA8; /* إضافة حدود على اليسار مثل التالنت */
 }
 
 /* تنسيق عناوين المهارات */
