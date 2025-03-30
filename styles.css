@@ -291,85 +291,72 @@ body {
 
 
 /* Mobile responsiveness - Enhanced */
+/* Mobile responsiveness - Wider layout */
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
-    }
-    
-    .top-nav {
-        padding: 8px 0;
-        white-space: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .nav-button {
-        padding: 6px 10px;
-        font-size: 12px;
-        margin: 0 2px;
-        display: inline-block;
-        white-space: nowrap;
+        font-size: 16px; /* زيادة حجم الخط */
     }
     
     .content-section {
-        padding: 10px;
-        margin: 10px auto;
+        padding: 15px;
+        margin: 15px auto;
+        max-width: 95%; /* توسيع عرض المحتوى */
     }
     
     .character-container {
         grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 10px;
+        gap: 15px;
+        padding: 15px;
     }
     
     .character-card {
-        padding: 10px;
+        padding: 15px;
     }
     
     .character-field {
-        padding: 8px;
+        padding: 12px;
     }
     
     .character-table td {
-        padding: 8px;
+        padding: 10px;
+        font-size: 14px; /* زيادة حجم خط الجدول */
     }
     
     .resources-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        grid-template-columns: repeat(4, 1fr); /* زيادة عدد الأعمدة */
+        gap: 12px;
     }
     
     .resource-image {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .resource-description {
+        font-size: 12px;
     }
     
     .character-select-image {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
     
     .level-slider {
-        height: 6px;
+        width: 90%; /* توسيع شريط التمرير */
     }
 }
 
 @media (max-width: 480px) {
-    .nav-button {
-        padding: 5px 8px;
-        font-size: 11px;
+    .content-section {
+        max-width: 98%; /* توسيع أكثر للشاشات الصغيرة */
     }
     
     .resources-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة بدلاً من 2 */
     }
     
-    .character-table {
-        font-size: 11px;
-    }
-    
-    .ability-item p {
-        font-size: 12px;
+    .character-table td {
+        padding: 8px 10px;
     }
 }
     
