@@ -381,3 +381,94 @@ body {
         margin: 0 auto; /* Center the image */
 
 }
+
+@media (max-width: 768px) {
+    .character-selection {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .character-option {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .character-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .character-card {
+        padding: 15px;
+    }
+
+    .character-field {
+        margin: 8px 0;
+        padding: 12px;
+    }
+
+    .character-select-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .character-selection {
+        padding: 8px;
+    }
+
+    .character-card {
+        padding: 10px;
+    }
+
+    .character-field {
+        padding: 10px;
+    }
+
+    .character-select-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .character-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+.resources-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.resource-image {
+    width: 45px;
+    height: 45px;
+}
+
+.resource-description {
+    font-size: 12px;
+}
+.character-select-image {
+    width: 90px;
+    height: 90px;
+}
+.level-slider {
+    width: 100%;
+}
+.character-card img[src*="UI_Gacha_AvatarImg_Escoffier.jpg"] {
+    width: 100%; /* Adjust to desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 3000px; /* Set a maximum width if needed */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+.character-card img[src*="UI_Gacha_AvatarImg_Ifa.webp"] {
+    width: 100%; /* Adjust to desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 3000px; /* Set a maximum width if needed */
+    display: block;
+    margin: 0 auto; /* Center the image */
+
+}
