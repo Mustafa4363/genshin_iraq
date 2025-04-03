@@ -123,6 +123,14 @@ body {
     max-width: 800px;
 }
 
+/* خيار الشخصية */
+.character-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .character-selector button {
     padding: 10px 20px;
     background-color: #4CAF50;
