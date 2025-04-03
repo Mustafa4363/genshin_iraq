@@ -20,10 +20,10 @@ body {
 
 /* بطاقة الشخصية */
 .character-card {
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    background: linear-gradient(to bottom, #ffffff, #E1BEE7);
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(106, 27, 154, 0.2);
     width: 90%;
     margin: 10px auto;
     transition: transform 0.3s ease;
@@ -64,7 +64,7 @@ body {
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
-    background: #4CAF50;
+    background: #6A1B9A;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -83,12 +83,16 @@ body {
 .character-table td {
     padding: 12px;
     text-align: right;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #E1BEE7;
+    transition: all 0.3s ease;
 }
 
 .character-table th {
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #6A1B9A, #9C27B0);
     color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* حقل الشخصية */
@@ -133,7 +137,7 @@ body {
 
 .character-selector button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #9C27B0;
     color: white;
     border: none;
     border-radius: 5px;
@@ -142,38 +146,41 @@ body {
 }
 
 .character-selector button:hover {
-    background-color: #45a049;
+    background-color: #7B1FA2;
 }
 
 .character-select-image {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #4CAF50;
+    border: 3px solid #6A1B9A;
     transition: transform 0.3s ease;
     object-fit: cover;
 }
 
 .character-select-image:hover {
     transform: scale(1.1);
-    border-color: #45a049;
+    border-color: #9C27B0;
 }
 
 .ability-title {
-    font-size: 1.2em;
-    color: #2c5530;
-    margin-bottom: 8px;
+    font-size: 1.3em;
+    color: #6A1B9A;
+    margin: 15px 0 10px 0;
     font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E1BEE7;
 }
 
 .ability-description {
     color: #666;
     line-height: 1.6;
-    margin-bottom: 15px;
-    padding: 10px;
+    margin: 15px 0;
+    padding: 15px;
     background-color: #f9f9f9;
-    border-radius: 6px;
-    border-right: 3px solid #4CAF50;
+    border-radius: 8px;
+    border-right: 4px solid #9C27B0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* تنسيق التالنت والكونستليشن */
@@ -192,7 +199,7 @@ body {
     padding: 15px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #6A1B9A;
     margin-bottom: 15px;
 }
 
@@ -217,7 +224,7 @@ body {
 }
 
 .constellation-level {
-    background-color: #4CAF50;
+    background-color: #9C27B0;
     color: white;
     padding: 3px 8px;
     border-radius: 4px;
@@ -240,7 +247,7 @@ body {
     justify-content: center;
     gap: 15px;
     padding: 15px 0;
-    background: linear-gradient(to left, #3a7d40, #4CAF50, #3a7d40);
+    background: linear-gradient(to left, #6A1B9A, #9C27B0, #6A1B9A);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -267,7 +274,7 @@ body {
 .nav-button:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(106, 27, 154, 0.2);
 }
 
 .nav-button:active {
