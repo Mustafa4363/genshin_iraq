@@ -367,8 +367,22 @@
             </div>
         </div>
         <div id="weapons" class="content-section">
-            <h2>الاسلحة</h2>
-            <p>This is the weapons section.</p>
+            <h2>الأسلحة</h2>
+            <div class="weapon-container">
+                <div class="character-selection">
+                    <div class="character-option" onclick="showWeaponDetails('weapon1')">
+                        <img src="pu/UI_EquipIcon_Bow_Stinger_Awaken.png" alt="السلاح الأول" class="character-select-image">
+                        <p>Sequence of Solitude</p>
+                    </div>
+                    <div class="character-option" onclick="showWeaponDetails('weapon2')">
+                        <img src="pu/image.png" alt="السلاح الثاني" class="character-select-image">
+                        <p>Symphonist of Scents</p>
+                    </div>
+                </div>
+            </div>
+            <div id="weapon-details">
+                <!-- سيتم ملء التفاصيل هنا عند النقر على سلاح -->
+            </div>
         </div>
         <div id="missions" class="content-section">
             <h2>المهام</h2>

@@ -285,14 +285,14 @@ function updateTable(characterId) {
     // Updated data for each level
     const levelData = {
         character1: {
-            1: ["★★★★★", "رمح", "1039", "27", "57", "0.0%", "1/1", "Turris Libum", "Cryo"],
-            20: ["★★★★★", "رمح", "3586", "93", "197", "0.0%", "1/1", "Turris Libum", "Cryo"],
-            40: ["★★★★★", "رمح", "5999", "156", "329", "4.8%", "1/1", "Turris Libum", "Cryo"],
-            50: ["★★★★★", "رمح", "7747", "201", "425", "9.6%", "1/1", "Turris Libum", "Cryo"],
-            60: ["★★★★★", "رمح", "9292", "241", "509", "9.6%", "1/1", "Turris Libum", "Cryo"],
-            70: ["★★★★★", "رمح", "10846", "281", "593", "14.4%", "1/1", "Turris Libum", "Cryo"],
-            80: ["★★★★★", "رمح", "12410", "321", "677", "19.2%", "1/1", "Turris Libum", "Cryo"],
-            90: ["★★★★★", "رمح", "13348", "347", "732", "19.2%", "1/1", "Turris Libum", "Cryo"],
+            1: ["★★★★★", "رمح", "1039", "27", "57", "0.0%", "1/1", "Turris Libum", "كرايو"],
+            20: ["★★★★★", "رمح", "3586", "93", "197", "0.0%", "1/1", "Turris Libum", "كرايو"],
+            40: ["★★★★★", "رمح", "5999", "156", "329", "4.8%", "1/1", "Turris Libum", "كرايو"],
+            50: ["★★★★★", "رمح", "7747", "201", "425", "9.6%", "1/1", "Turris Libum", "كرايو"],
+            60: ["★★★★★", "رمح", "9292", "241", "509", "9.6%", "1/1", "Turris Libum", "كرايو"],
+            70: ["★★★★★", "رمح", "10846", "281", "593", "14.4%", "1/1", "Turris Libum", "كرايو"],
+            80: ["★★★★★", "رمح", "12410", "321", "677", "19.2%", "1/1", "Turris Libum", "كرايو"],
+            90: ["★★★★★", "رمح", "13348", "347", "732", "19.2%", "1/1", "Turris Libum", "كرايو"],
         },
     
         character2: {
@@ -328,3 +328,262 @@ function updateTable(characterId) {
         tableBody.appendChild(tr);
     });
     }
+
+function showWeaponDetails(weaponId) {
+    const weaponDetails = document.getElementById('weapon-details');
+    weaponDetails.innerHTML = '';
+    
+    function updateWeaponStats(weaponId, level) {
+        // تحديد عناصر إحصائيات السلاح بشكل صحيح
+        const baseAttackValue = document.querySelector(`.weapon-stats-container .stat-container:first-child .stat-value`);
+        const subStatValue = document.querySelector(`.weapon-stats-container .stat-container:last-child .stat-value`);
+        
+        // Example data for weapon stats at different levels
+        const weaponStats = {
+            weapon1: {
+                baseAttack: ["42", "135", "231", "292", "353", "414", "475", "510"],
+                subStatValue: ["9.0%", "15.9%", "23.2%", "26.8%", "30.4%", "34.1%", "37.7%", "41.3%"]
+            },
+            weapon2: {
+                baseAttack: ["46", "153", "266", "340", "414", "488", "563", "608"],
+                subStatValue: ["14.4%", "25.4%", "37.1%", "42.9%", "48.7%", "54.5%", "60.3%", "66.2%"]
+            }
+        };
+        
+        const levelMap = {
+            1: 0, 2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 7: 6, 8: 7
+        };
+        
+        const levelIndex = levelMap[level];
+        
+        if (baseAttackValue) baseAttackValue.textContent = weaponStats[weaponId].baseAttack[levelIndex];
+        if (subStatValue) subStatValue.textContent = weaponStats[weaponId].subStatValue[levelIndex];
+    }
+    
+    // Weapon stats data
+    const weaponData = {
+        weapon1: {
+            name: "Sequence of Solitude",
+            type: "قوس",
+            rarity: 4,
+            baseAttack: "42",
+            subStat: "HP",
+            subStatValue: "9.0%",
+            description: "لا يوجد",
+            passive: "عند إصابة خصم بهجوم سيلحق ضرر AOE يعادل 40% من الماكس HP في موقع الخصم. يمكن تفعيل هذا التأثير مرة كل 15 ثانية.",
+            ranks: {
+                1: "عند إصابة خصم بهجوم سيلحق ضرر AOE يعادل 40% من الماكس HP في موقع الخصم. يمكن تفعيل هذا التأثير مرة كل 15 ثانية.",
+                2: "عند إصابة خصم بهجوم سيلحق ضرر AOE يعادل 50% من الماكس HP في موقع الخصم. يمكن تفعيل هذا التأثير مرة كل 15 ثانية.",
+                3: "عند إصابة خصم بهجوم سيلحق ضرر AOE يعادل 60% من الماكس HP في موقع الخصم. يمكن تفعيل هذا التأثير مرة كل 15 ثانية.",
+                4: "عند إصابة خصم بهجوم سيلحق ضرر AOE يعادل 70% من الماكس HP في موقع الخصم. يمكن تفعيل هذا التأثير مرة كل 15 ثانية.",
+                5: "عند إصابة خصم بهجوم سيلحق ضرر AOE يعادل 80% من الماكس HP في موقع الخصم. يمكن تفعيل هذا التأثير مرة كل 15 ثانية."
+            }
+        },
+        weapon2: {
+            name: "Symphonist of Scents",
+            type: "رمح",
+            rarity: 5,
+            baseAttack: "46",
+            subStat: "الكريت دمج",
+            subStatValue: "14.4%",
+            description: "لا يوجد",
+            passive: "يزداد الاتاك بنسبة 12% عندما تكون الشخصية المجهزة بالسلاح خارج الملعب يزداد الاتاك بنسبة 12% إضافية وبعد الشفاء ستحصل الشخصية المجهزة والشخصية (أو الشخصيات) التي تم شفائهم على تأثير 'أغنية البايز' مما يزيد الاتاك الخاص بهم بنسبة 32% لمدة 3 ثواني ويمكن تفعيل هذا التأثير حتى لو كانت الشخصية المجهزة بالسلاح خارج الملعب.",
+            ranks: {
+                1: "يزداد الاتاك بنسبة 12% عندما تكون الشخصية المجهزة بالسلاح خارج الملعب يزداد الاتاك بنسبة 12% إضافية وبعد الشفاء ستحصل الشخصية المجهزة والشخصية (أو الشخصيات) التي تم شفائهم على تأثير 'أغنية البايز' مما يزيد الاتاك الخاص بهم بنسبة 32% لمدة 3 ثواني ويمكن تفعيل هذا التأثير حتى لو كانت الشخصية المجهزة بالسلاح خارج الملعب.",
+                2: "يزداد الاتاك بنسبة 15% عندما تكون الشخصية المجهزة بالسلاح خارج الملعب يزداد الاتاك بنسبة 15% إضافية وبعد الشفاء ستحصل الشخصية المجهزة والشخصية (أو الشخصيات) التي تم شفائهم على تأثير 'أغنية البايز' مما يزيد الاتاك الخاص بهم بنسبة 40% لمدة 3 ثواني ويمكن تفعيل هذا التأثير حتى لو كانت الشخصية المجهزة بالسلاح خارج الملعب.",
+                3: "يزداد الاتاك بنسبة 18% عندما تكون الشخصية المجهزة بالسلاح خارج الملعب يزداد الاتاك بنسبة 18% إضافية وبعد الشفاء ستحصل الشخصية المجهزة والشخصية (أو الشخصيات) التي تم شفائهم على تأثير 'أغنية البايز' مما يزيد الاتاك الخاص بهم بنسبة 48% لمدة 3 ثواني ويمكن تفعيل هذا التأثير حتى لو كانت الشخصية المجهزة بالسلاح خارج الملعب.",
+                4: "يزداد الاتاك بنسبة 21% عندما تكون الشخصية المجهزة بالسلاح خارج الملعب يزداد الاتاك بنسبة 21% إضافية وبعد الشفاء ستحصل الشخصية المجهزة والشخصية (أو الشخصيات) التي تم شفائهم على تأثير 'أغنية البايز' مما يزيد الاتاك الخاص بهم بنسبة 56% لمدة 3 ثواني ويمكن تفعيل هذا التأثير حتى لو كانت الشخصية المجهزة بالسلاح خارج الملعب.",
+                5: "يزداد الاتاك بنسبة 24% عندما تكون الشخصية المجهزة بالسلاح خارج الملعب يزداد الاتاك بنسبة 24% إضافية وبعد الشفاء ستحصل الشخصية المجهزة والشخصية (أو الشخصيات) التي تم شفائهم على تأثير 'أغنية البايز' مما يزيد الاتاك الخاص بهم بنسبة 64% لمدة 3 ثواني ويمكن تفعيل هذا التأثير حتى لو كانت الشخصية المجهزة بالسلاح خارج الملعب."
+            }
+        }
+    };
+    
+    // Create weapon container
+    const weaponContainer = document.createElement('div');
+    weaponContainer.className = 'weapon-detail-container';
+    weaponDetails.appendChild(weaponContainer);
+    
+    // Create left section (image and basic info)
+    const leftSection = document.createElement('div');
+    leftSection.className = 'weapon-left-section';
+    weaponContainer.appendChild(leftSection);
+    
+    // Create right section (stats and abilities)
+    const rightSection = document.createElement('div');
+    rightSection.className = 'weapon-right-section';
+    weaponContainer.appendChild(rightSection);
+    
+    // Add weapon image to left section
+    const weaponImage = document.createElement('div');
+    weaponImage.className = 'weapon-image-container';
+    leftSection.appendChild(weaponImage);
+    
+    const img = document.createElement('img');
+    img.src = `pu/${weaponId === 'weapon1' ? 'UI_EquipIcon_Bow_Stinger_Awaken.png' : 'image.png'}`;
+    img.alt = weaponData[weaponId].name;
+    img.className = 'weapon-detail-image';
+    weaponImage.appendChild(img);
+    
+    // Add weapon name and type
+    const weaponHeader = document.createElement('div');
+    weaponHeader.className = 'weapon-header';
+    leftSection.appendChild(weaponHeader);
+    
+    // Add stars based on rarity
+    const rarityStars = document.createElement('div');
+    rarityStars.className = 'weapon-rarity';
+    for (let i = 0; i < weaponData[weaponId].rarity; i++) {
+        const star = document.createElement('span');
+        star.className = 'rarity-star';
+        star.innerHTML = '★';
+        rarityStars.appendChild(star);
+    }
+    weaponHeader.appendChild(rarityStars);
+    
+    const weaponName = document.createElement('h3');
+    weaponName.className = 'weapon-name';
+    weaponName.textContent = weaponData[weaponId].name;
+    weaponHeader.appendChild(weaponName);
+    
+    const weaponType = document.createElement('div');
+    weaponType.className = 'weapon-type';
+    weaponType.textContent = weaponData[weaponId].type;
+    weaponHeader.appendChild(weaponType);
+    
+    // Add weapon stats to right section
+    const statsContainer = document.createElement('div');
+    statsContainer.className = 'weapon-stats-container';
+    rightSection.appendChild(statsContainer);
+    
+    // Base Attack
+    const baseAttackContainer = document.createElement('div');
+    baseAttackContainer.className = 'stat-container';
+    statsContainer.appendChild(baseAttackContainer);
+    
+    const baseAttackLabel = document.createElement('div');
+    baseAttackLabel.className = 'stat-label';
+    baseAttackLabel.textContent = 'الاتاك';
+    baseAttackContainer.appendChild(baseAttackLabel);
+    
+    const baseAttackValue = document.createElement('div');
+    baseAttackValue.className = 'stat-value';
+    baseAttackValue.textContent = weaponData[weaponId].baseAttack;
+    baseAttackContainer.appendChild(baseAttackValue);
+    
+    // Sub Stat
+    const subStatContainer = document.createElement('div');
+    subStatContainer.className = 'stat-container';
+    statsContainer.appendChild(subStatContainer);
+    
+    const subStatLabel = document.createElement('div');
+    subStatLabel.className = 'stat-label';
+    subStatLabel.textContent = weaponData[weaponId].type === 'قوس' ? 'HP' : 'الكريت دمج';
+    subStatContainer.appendChild(subStatLabel);
+    
+    const subStatValue = document.createElement('div');
+    subStatValue.className = 'stat-value';
+    subStatValue.textContent = weaponData[weaponId].subStatValue;
+    subStatContainer.appendChild(subStatValue);
+    
+    // Create level slider
+    const sliderContainer = document.createElement('div');
+    sliderContainer.className = 'weapon-level-container';
+    rightSection.appendChild(sliderContainer);
+    
+    const levelLabel = document.createElement('div');
+    levelLabel.className = 'level-label';
+    levelLabel.textContent = 'المستوى:';
+    sliderContainer.appendChild(levelLabel);
+    
+    const levelSliderContainer = document.createElement('div');
+    levelSliderContainer.className = 'level-slider-container';
+    sliderContainer.appendChild(levelSliderContainer);
+    
+    const slider = document.createElement('input');
+    slider.type = 'range';
+    slider.min = '1';
+    slider.max = '8';
+    slider.value = '1';
+    slider.id = `weapon-level-slider-${weaponId}`;
+    slider.className = 'level-slider';
+    levelSliderContainer.appendChild(slider);
+    
+    const levelDisplay = document.createElement('div');
+    levelDisplay.id = `weapon-level-display-${weaponId}`;
+    levelDisplay.className = 'level-display';
+    levelDisplay.textContent = 'المستوى: 1';
+    levelSliderContainer.appendChild(levelDisplay);
+    
+    slider.oninput = function() {
+        const levelMap = {
+            1: 1,
+            2: 20,
+            3: 40,
+            4: 50,
+            5: 60,
+            6: 70,
+            7: 80,
+            8: 90
+        };
+        levelDisplay.textContent = `المستوى: ${levelMap[this.value]}`;
+        updateWeaponStats(weaponId, this.value);
+    };
+    
+    // Create description section
+    const descriptionSection = document.createElement('div');
+    descriptionSection.className = 'weapon-description-section';
+    rightSection.appendChild(descriptionSection);
+    
+    const descriptionTitle = document.createElement('h4');
+    descriptionTitle.className = 'section-title';
+    descriptionTitle.textContent = 'الوصف';
+    descriptionSection.appendChild(descriptionTitle);
+    
+    const descriptionText = document.createElement('p');
+    descriptionText.className = 'description-text';
+    descriptionText.textContent = weaponData[weaponId].description;
+    descriptionSection.appendChild(descriptionText);
+    
+    // Create passive ability section
+    const passiveSection = document.createElement('div');
+    passiveSection.className = 'weapon-passive-section';
+    rightSection.appendChild(passiveSection);
+    
+    const passiveTitle = document.createElement('h4');
+    passiveTitle.className = 'section-title';
+    passiveTitle.textContent = 'القدرة الخاصة';
+    passiveSection.appendChild(passiveTitle);
+    
+    // Create rank selection
+    const rankContainer = document.createElement('div');
+    rankContainer.className = 'rank-container';
+    passiveSection.appendChild(rankContainer);
+    
+    const rankLabel = document.createElement('label');
+    rankLabel.textContent = 'الرانك:';
+    rankLabel.className = 'rank-label';
+    rankLabel.htmlFor = `weapon-rank-select-${weaponId}`;
+    rankContainer.appendChild(rankLabel);
+    
+    const rankSelect = document.createElement('select');
+    rankSelect.id = `weapon-rank-select-${weaponId}`;
+    rankSelect.className = 'rank-select';
+    rankContainer.appendChild(rankSelect);
+    
+    for (let i = 1; i <= 5; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        rankSelect.appendChild(option);
+    }
+    
+    const rankDescription = document.createElement('div');
+    rankDescription.id = `weapon-rank-description-${weaponId}`;
+    rankDescription.className = 'rank-description';
+    rankDescription.textContent = weaponData[weaponId].ranks[1];
+    passiveSection.appendChild(rankDescription);
+    
+    rankSelect.onchange = function() {
+        rankDescription.textContent = weaponData[weaponId].ranks[this.value];
+    };
+}
